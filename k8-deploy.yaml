@@ -39,7 +39,7 @@ spec:
     - protocol: TCP
       port: 80                         # Port number that your service has to listen and this is the port you will access
       targetPort: 80                   # TargetPort forwards the requests to the backend pod
-  type: LoadBalance
+  type: LoadBalancer
 
 ---
 apiVersion: autoscaling/v2beta1
